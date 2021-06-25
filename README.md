@@ -12,6 +12,8 @@ sudo pip3 install discord.py Pillow opencv-python
 
 # Usage
 
+## Discord Bot
+
 1. Write a config file.
 
 ```bash
@@ -39,11 +41,17 @@ bad apple [<frame number>]
 
 | ![](./readme_assets/ss.png) |
 |:-:|
-| Screenshot. |
+| Screenshot of `./main.py`. |
 
-Frames can also be printed to a terminal. This functionality is commented out by default.
+## Print to Terminal
+
+Frames can also be printed to a terminal.
+
+```bash
+./terminal.py
+```
 
 | ![](./readme_assets/ss2.png) |
 |:-:|
-| Screenshot. |
+| Screenshot of `./terminal.py`. |
 

@@ -44,7 +44,7 @@ ascii_chars: list[str] = ['⠀', '⠄', '⠆', '⠖', '⠶', '⡶', '⣩', '⣪'
 ascii_chars.reverse() #TODO what?
 ascii_chars = ascii_chars[::-1]
 
-width: int = 60
+width: int = prm['new_width']
 
 #This is the time length per frame.
 #But the number of the frames are decreased by `/4` and the time length per frame is multiplied by `18`.
@@ -93,12 +93,23 @@ if (os.path.isfile(pickle_file)):
     with open(pickle_file, 'rb') as f:
         frames = pickle.load(f)
 else:
+
     for i in range(1, int(num_frame / 4) + 1): #`/4` decreases the number of the frames.
         print(f'    {i:04d}/{int(num_frame / 4)}')
         frame_path: str = f'{frame_directory}/frame_{i * 4:05d}.jpg'
         frames.append(process_frame(frame_path))
+
+#     #Use this instead and uncomment `sys.exit(0)` below if you'd like not to thin out any frames.
+#     #This may be useful when used with `./terminal.py`.
+#     for i in range(1, int(num_frame) + 1):
+#         print(f'    {i:04d}/{int(num_frame)}')
+#         frame_path: str = f'{frame_directory}/frame_{i:05d}.jpg'
+#         frames.append(process_frame(frame_path))
+
     with open(pickle_file, 'wb') as f:
         pickle.dump(frames, f)
+
+# sys.exit(0)
 
 #-------------------------------------#
 

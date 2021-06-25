@@ -3,5 +3,6 @@
     "pickle_file":     "ascii_art_list.pickle",
     "frame_directory": "./frames",
     "target_video":    "./bad_apple.mp4",
-    "fps":             30
+    "fps":             30,
+    "new_width":       60
 }
