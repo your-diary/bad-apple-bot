@@ -7,7 +7,7 @@ This project is forked from [*NPCat / bad-apple-bot*](https://github.com/NPCat/b
 # Requirements
 
 ```bash
-sudo pip3 install discord.py opencv-python
+sudo pip3 install discord.py Pillow opencv-python
 ```
 
 # Usage

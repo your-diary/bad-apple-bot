@@ -174,16 +174,16 @@ class MyClient(discord.Client):
 
 if (__name__ == '__main__'):
 
-    #plays on terminal
-    for i in range(len(frames)):
-        print(frames[i])
-        time.sleep(timeout / 18)
+#     #plays on terminal
+#     for i in range(len(frames)):
+#         print(frames[i])
+#         time.sleep(timeout / 18)
 
-#     try:
-#         client: object = MyClient()
-#         client.run(token)
-#     except BaseException as e:
-#         print(e)
+    try:
+        client: object = MyClient()
+        client.run(token)
+    except BaseException as e:
+        print(e)
 
 #-------------------------------------#
 
