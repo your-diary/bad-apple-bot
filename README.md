@@ -4,6 +4,14 @@ This is a Discord bot which replies a random frame of the very famous video [*ã€
 
 This project is forked from [*NPCat / bad-apple-bot*](https://github.com/NPCat/bad-apple-bot). We have read, extended, optimized and refactored all the codes.
 
+### Demo Video
+
+You can click the thumbnail below to watch the demo of `./terminal.py` on YouTube.
+
+| [![](./readme_assets/ss3.png)](https://www.youtube.com/watch?v=njc7omGdASw) |
+|:-:|
+| Demo of `./terminal.py`. |
+
 # Requirements
 
 ```bash
