@@ -1,0 +1,7 @@
+{
+    "token":           "ajlfejlagjleajglaejglajelgjalejalgjealjlajaelefjleajflaljfe",
+    "pickle_file":     "ascii_art_list.pickle",
+    "frame_directory": "./frames",
+    "target_video":    "./bad_apple.mp4",
+    "fps":             30
+}
